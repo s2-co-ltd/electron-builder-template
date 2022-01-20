@@ -16,4 +16,7 @@ app.on("ready", () => {
   });
 
   mainWindow.loadFile(path.join(__dirname, "renderer/index.html"))
+
+  // 下記のコードは、アプリからメニューバーを削除しています。
+  mainWindow.setMenu(null);
 });
